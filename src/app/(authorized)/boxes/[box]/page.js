@@ -2,6 +2,7 @@ import Reminder from "@/components/reminder";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import AddReminder from "@/components/addReminder";
+export const dynamic = 'force-dynamic';
 
 export default async function BoxPage({ params: { box } }) {
 	const supabase = createServerComponentClient({ cookies });
